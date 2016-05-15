@@ -11,8 +11,12 @@ $(document).ready(function () {
             // Animation complete
         });
         $("#myCanvas").fadeIn("slow", function () {
-
+            //$(".taff").animate({
+            //    opacity: 1
+            //}, 1000);
         });
+        
+        
     });
  
    $('section[data-type="background"]').each(function(){
