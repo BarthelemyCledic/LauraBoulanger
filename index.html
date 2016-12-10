@@ -82,7 +82,15 @@
         h3 {
             color: #5aa2e5;
         }
-
+        h4 {
+            
+            font-weight: bold;
+            margin-top : 15px;
+            padding-top: 10px;
+        }
+        h5{
+            font-weight: normal;
+        }
         #myCanvas {
             background: url(images/FondHeaderDroite.png) no-repeat;
             display: none;
@@ -121,7 +129,7 @@
 
         .title {
             /*color: #f5f5f5;*/
-            font-size: 1.9em;
+            font-size: 1.1em;
         }
 
         body {
@@ -133,12 +141,12 @@
             line-height: 30px;
         }
 
-        #bgExternis {
+        /*#bgExternis {
             background: url(images/bfmtv.png) no-repeat;
             background-position: right top;
             margin-right: -20px;
             float: left;
-        }
+        }*/
 
         
         .imageLink {
@@ -163,6 +171,10 @@
         {
             color:white
         }
+        hr{
+            color: blue;
+        }
+
        
     </style>
 
@@ -183,7 +195,7 @@
                         Laura Boulanger
                         <div id="Fonction">
                             <i style="color:gray;font-size:0.8em">
-                                aaChargée de communication
+                                Chargée de communication
                             </i>
                         </div>
                         <br />
@@ -209,22 +221,22 @@
                         context.fillStyle = colorBackground;
                         context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth + 35, rectHeight);
                         context.fillStyle = 'White';
-                        context.fillText('Visual Studio', -13, 3);
+                        context.fillText('Visual Studio', -13, 3);//5*
                         context.translate(40, 40);
                         context.fillStyle = colorBackground;
                         context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth + 17, rectHeight);
                         context.fillStyle = 'White';
-                        context.fillText('PhotoShop', -30, 3);
+                        context.fillText('PhotoShop', -30, 3);//5*
                         context.translate(40, 40);
                         context.fillStyle = colorBackground;
                         context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth - 62, rectHeight);
                         context.fillStyle = 'White';
-                        context.fillText('Sql Serv.', -45, 3);
+                        context.fillText('Sql Serv.', -45, 3);//3*
                         context.translate(40, 40);
                         context.fillStyle = colorBackground;
                         context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth - 47, rectHeight);
                         context.fillStyle = 'White';
-                        context.fillText('Blend', -62, 3);
+                        context.fillText('Blend', -62, 3);//4*
                         context.translate(00, 40);
                         context.fillStyle = colorBackground;
                         context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth - 55, rectHeight);
@@ -236,7 +248,7 @@
             <div class="row-fluid">
                 <div class="span14 ">
                     <p id="evop">
-                        Forte d’une expérience de 5 ans dans le domaine de la communication, je suis spécialisée…
+                        Forte d’une expérience de plus de 5 ans dans la communication, je suis spécialisée…dans les partenariats médias et hors médias.</br>
                         Polyvalente, créative et organisée, j’ai le sens de l’écoute et le goût des relations humaines
                     </p>
                 </div>
@@ -249,39 +261,42 @@
             </div>
             <div class="row-fluid">
                 <div class="span14 taff">
-                    <div id="bgExternis" />
-                    <div class="divtitle"><span class="title"><a href="bfmtv.com" target="_blank">BFMTV</a></span><b>2011 à aujourd'hui</b></div>                    
-                    <h3>Chargée de communication</h3>
-                    <h4>Relations presse</h4>
-                    <p style="margin-right:140px;">
-                        Conçoit, rédige et diffuse les supports de commucation de la chaîne : CP, dossier de presse…<br />
-                        Contact quotidien avec les journalistes médias (TV, radio, presse écrite, web…)
-                    </p>
+                    <!--<div id="bgExternis" />-->
+                    <div class="divtitle"><span class="title"><a href="http://www.bfmtv.com/" target="_blank" style="font-size:1.6em">BFMTV</a></span><b> 2011 à aujourd'hui</b></div></br>
+                    <div class="divtitle"><span class="title"><a href="http://www.bfmtv.com/paris/" target="_blank" style="font-size:1.6em">BFM PARIS</a></span><b> Depuis novembre 2016</b></div>                                        
+                    <!--<h3>Chargée de communication</h3>-->
                     <h4>Partenariats médias et hors-médias</h4>
                     <p style="margin-right:140px;">
-                        Participe à l’élaboration d’une stratégie de communication pour la chaîne<br />                        
-                        Veille, négo et contrat<br />
-                        En charge de la mise en place du dispo rédactionnel, digital et promotionnel<br />
-                        Suivi avec les différents partenaires, prestataires<br />
-                    </p>
+                        Participe à l’élaboration de la stratégie de communication de la chaîne</br>
+                        Veille, négociation et contrat</br>
+                        En charge de la mise en place du dispo rédactionnel (antenne et digital) et promotionnel</br>
+                        Suivi avec la rédaction, les partenaires et les prestataires</br>
+                    </p>                    
+                    <h4>Relations presse</h4>
+                    
+                    <p style="margin-right:140px;">
+                        Conçois, rédige et diffuse les supports de communication de la chaîne : communiqués de presse, dossiers de presse…</br>
+                        Contact quotidien avec les journalistes médias (agences, TV, radio, presse écrite, web…)</br>
+                    </p>                    
+                    <h4>Digital</h4>
+                    <p style="margin-right:140px;">
+                        Rédaction de contenus dans la partie « Making off » du site BFMTV.com et sur les réseaux sociaux de la chaîne (Facebook, Twitter compte « BFMTV Inside », Instagram, Snaptchat)
+                        mise en place de jeux concours</br>
+                        Veille technologique
+                    </p>                    
                     <h4>Relations publiques</h4>
                     <p style="margin-right:140px;">
                         Participe à l’élaboration et à l’organisation des événements de la chaîne : conférence de presse, conférence de rentrée, cérémonies (BFM AWARDS…), Prix (PDL 2016), RP partenariats<br />
-                    </p>
-                    <h4>Digital</h4>
-                    <p style="margin-right:140px;">
-                        Rédaction de contenus dans la partie « Making off » du site BFMTV.com + RS (Twitter « BFMTV Inside » &amp; Instagram, Snaptchat)<br />
-                        Veille technologique<br />
-                    </p>
+                    </p>                    
                     <h4>Communication interne</h4>
                     <p style="margin-right:140px;">
-                        Auprès des salariés du groupe NextRadioTV via le RS d’entreprise NextBook, la newsletter hebdomadaire, le tableau « communication » au cœur de la rédaction, l’attribution de dotations<br />
-                        dans le cadre des partenariats<br />
+                        Auprès des salariés du groupe NextRadioTV via le réseau social d’entreprise NextBook, la newsletter hebdomadaire, le tableau « communication » au cœur de la rédaction, l’attribution de dotations
+                        dans le cadre des partenariats
                     </p>
                     <h4>Budget comunication</h4>
                     <p style="margin-right:140px;">
-                        Tenir à jour le budget du service<br />
-                        Négo avec prestataires
+                        Tenir à jour le budget du service</br>
+                        Négociation -- avec prestataires
                     </p>
                
                 </div>
@@ -295,17 +310,19 @@
             </div>
             <div class="row-fluid">
                 <div class="span14  taff">
-                    <div class="divtitle"><span class="title">Université Paris Ouest La Défense</span><b> 2005 – 2011 </b></div>
+                    
                     <h3>Maitrise de droit pénal et procédure pénale</h3>
-                    <h4>Nanterre</h4>
+                    <div class="divtitle"><span class="title"><b> 2005 – 2011 </b>Université Paris Ouest La Défense </span>- Nanterre</div>
+                    
                 </div>
 
             </div>
             <div class="row-fluid">
                 <div class="span14  taff">
-                    <div class="divtitle"><span class="title">Lycée Joliot Curie</span><b> 2005</b></div>
+                    
                     <h3>BAC littéraire</h3>
-                    <h4>Nanterre</h4>
+                    <div class="divtitle"><span class="title"><b> 2005 </b>Lycée Joliot Curie </span>- Nanterre</div>
+                    
                 </div>
             </div>           
         </div>
