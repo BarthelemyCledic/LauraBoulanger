@@ -34,17 +34,17 @@
         #IdentityPhoto {
             width: 123px;
             height: 123px;
-            margin-top: 100px;
-            margin-left: 30px;
+            margin-top: 50px;
+            margin-left: 40px;
             margin-bottom: 20px;
             float: left;
             display: none;
-            background: url(images/Identity.png) no-repeat;
+            background: url(images/Identity2.png) no-repeat;
         }
 
         #MyName {
             float: left;
-            margin-top: 110px;
+            margin-top: 70px;
             margin-left: 10px;
             font-size: 1.9em;
             /*color: white;*/
@@ -60,12 +60,12 @@
 
         .Canvas {
             float: right;
-            margin-top: 43px;
+
             margin-right: 0px;
         }
 
         #MyHeader {
-            border-bottom: 3px solid black;
+            border-bottom: 3px solid #5c5c5c;
         }
 
         .Exp {
@@ -165,8 +165,10 @@
             /*color: #f0f0f0;*/
         }
 
-        #Fonction {
-            margin-top: 5px;
+        .fonction {
+            color: #027bec;
+            margin-top: 21px;
+            font-size: 2.2em;
         }
         .page-header
         {
@@ -186,15 +188,28 @@
              display: inline-block;
              width: 50%;
          }      
+         .comLogo
+          {
+              padding-top: 20px;
+              padding-bottom: 20px;
+              display:inline-block;
+              width:33%;
+              border-right:1px solid lightgrey;
+              text-align:center;              
+          }
+          .comLogo a{
+              text-decoration: none;
+              font-size: 1.4em;
+          }
+          .imglogo
+          {
+              margin-top: 20px;
+          }
     </style>
 
 </head>
 
 <body>
-
-
-
-
     <!-- Section #2 -->
     <section id="home" data-speed="8.5" data-type="background">
         <div class="container">
@@ -202,19 +217,14 @@
                 <div class="span14" id="MyHeader">
                     <div id="IdentityPhoto"></div>
                     <div id="MyName">
-                        Laura Boulanger
-                        <div id="Fonction">
-                            <i style="color:gray;font-size:0.8em">
-                                Chargée de communication
-                            </i>
-                        </div>
-                        <br />
+                        Laura Boulanger      
                         <div id="Address">
                             63 bis avenue Edouard Vaillant
                             <br />
                             92100 Boulogne Billancourt
-                        </div>
-
+                            <br/>
+                            06 30 24 74 84  
+                        </div>    
                     </div>
                     <canvas id="myCanvas" class="Canvas" width="300" height="200"></canvas>
                     <script>
@@ -231,34 +241,38 @@
                         context.fillStyle = colorBackground;
                         context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth + 35, rectHeight);
                         context.fillStyle = 'White';
-                        context.fillText('Visual Studio', -13, 3);//5*
+                        context.fillText('', -13, 3);//5*
                         context.translate(40, 40);
                         context.fillStyle = colorBackground;
                         context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth + 17, rectHeight);
                         context.fillStyle = 'White';
-                        context.fillText('PhotoShop', -30, 3);//5*
+                        context.fillText('', -30, 3);//5*
                         context.translate(40, 40);
                         context.fillStyle = colorBackground;
                         context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth - 62, rectHeight);
                         context.fillStyle = 'White';
-                        context.fillText('Sql Serv.', -45, 3);//3*
+                        context.fillText('.', -45, 3);//3*
                         context.translate(40, 40);
                         context.fillStyle = colorBackground;
                         context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth - 47, rectHeight);
                         context.fillStyle = 'White';
-                        context.fillText('Blend', -62, 3);//4*
+                        context.fillText('', -62, 3);//4*
                         context.translate(00, 40);
                         context.fillStyle = colorBackground;
                         context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth - 55, rectHeight);
                         context.fillStyle = 'White';
-                        context.fillText('M Office', -40, 3);
+                        context.fillText('', -40, 3);
                     </script>
                 </div>
+            </div>
+            <div style="clear:both"></div>
+            <div class="fonction">                            
+                Chargée de communication
             </div>
             <div class="row-fluid">
                 <div class="span14 ">
                     <p id="evop">
-                        Forte d’une expérience de plus de 5 ans dans la communication, je suis spécialisée…dans les partenariats médias et hors médias.</br>
+                        Forte d’une expérience de plus de 5 ans dans la communication, je suis spécialisée dans les partenariats médias et hors médias.</br>
                         Polyvalente, créative et organisée, j’ai le sens de l’écoute et le goût des relations humaines
                     </p>
                 </div>
@@ -297,7 +311,30 @@
                         Rédaction de contenus dans la partie « Making off » du site BFMTV.com et sur les réseaux sociaux de la chaîne (Facebook, Twitter compte « BFMTV Inside », Instagram, Snaptchat)
                         mise en place de jeux concours</br>
                         Veille technologique
-                    </p>                    
+                    </p>  
+                          <div>
+                        <div class="comLogo">
+                            <a href="https://twitter.com/BFMTV_Inside">
+                                <div>BFMTV Inside</div>
+                                <div class="imglogo"><img src="images/twitter.png" alt="twitter"></div>
+                            </a>    
+                        </div>
+                        <div class="comLogo">
+                            <a href="https://www.facebook.com/BFMTV/">
+                                <div>BFMTV Facebook</div>
+                                <div class="imglogo"><img src="images/facebook.png" alt="facebook"></div>
+                            </a>                            
+                        </div>
+                        <div class="comLogo" style="border-right:0px; ">
+                            <a href="https://www.instagram.com/bfmtv/">
+                                <div>BFMTV Instagram</div>
+                                <div class="imglogo"><img src="images/insta.png" alt="instagram"></div>
+                            </a>                          
+                        </div>
+                        <!--<div class="comLogo" style="border-right:0px;">
+                            Snap chat
+                        </div>    -->
+                    </div>                    
                     <h4>Relations publiques</h4>
                     <p >
                         Participe à l’élaboration et à l’organisation des événements de la chaîne : conférence de presse, conférence de rentrée, cérémonies (BFM AWARDS…), Prix (PDL 2016), RP partenariats<br />
@@ -310,8 +347,13 @@
                     <h4>Budget comunication</h4>
                     <p >
                         Tenir à jour le budget du service</br>
-                        Négociation -- avec prestataires
-                    </p>               
+                        Négociation avec prestataires
+                    </p>   
+                        
+                    
+                    
+                    
+                    
                 </div>
 
             </div>
